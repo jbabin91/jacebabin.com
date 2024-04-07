@@ -2,7 +2,7 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', '*.gen.ts'],
   extends: ['eslint:recommended', 'plugin:unicorn/recommended', 'prettier'],
   plugins: ['import', 'simple-import-sort', 'sort-keys-fix'],
   rules: {

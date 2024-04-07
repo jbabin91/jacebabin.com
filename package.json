@@ -20,11 +20,14 @@
     }
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.26.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.1.0",
+    "@tanstack/router-devtools": "^1.26.12",
+    "@tanstack/router-vite-plugin": "^1.26.10",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
