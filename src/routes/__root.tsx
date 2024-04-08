@@ -20,6 +20,9 @@ function RootLayout() {
             <Link className="[&.active]:font-bold" to="/about">
               About
             </Link>
+            <Link className="[&.active]:font-bold" to="/example">
+              Example
+            </Link>
           </nav>
           <ModeToggle />
         </div>
