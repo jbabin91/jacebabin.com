@@ -85,9 +85,6 @@
   body {
     @apply bg-background text-foreground m-0 min-h-screen;
   }
-  #app {
-    @apply max-w-screen-xl;
-  }
   .logo {
     @apply h-[6em] will-change-[filter] transition-[filter] duration-300 p-[1.5em];
   }
