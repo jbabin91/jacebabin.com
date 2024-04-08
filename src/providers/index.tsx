@@ -1,5 +1,10 @@
 import { TanStackRouterProvider } from './TanStackRouterProvider';
+import { ThemeProvider } from './ThemeProvider';
 
 export function Providers() {
-  return <TanStackRouterProvider />;
+  return (
+    <ThemeProvider>
+      <TanStackRouterProvider />
+    </ThemeProvider>
+  );
 }

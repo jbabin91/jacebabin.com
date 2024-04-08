@@ -1,7 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2022: true, node: true },
   ignorePatterns: ['dist', '.eslintrc.cjs', '*.gen.ts'],
   extends: ['eslint:recommended', 'plugin:unicorn/recommended', 'prettier'],
   plugins: ['import', 'simple-import-sort', 'sort-keys-fix'],
@@ -59,6 +59,7 @@ module.exports = {
         'plugin:react/jsx-runtime',
         'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
+        'plugin:tailwindcss/recommended',
       ],
       rules: {
         'react/jsx-sort-props': [
@@ -73,6 +74,7 @@ module.exports = {
           },
         ],
         'react/prop-types': 'off',
+        'tailwindcss/no-custom-classname': 'off',
       },
       settings: {
         react: { version: 'detect' },
