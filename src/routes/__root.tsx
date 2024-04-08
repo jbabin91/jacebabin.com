@@ -1,6 +1,8 @@
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router';
+import { Suspense } from 'react';
 
 import { ModeToggle } from '@/components/ModeToggle';
+import { TanStackRouterDevtools } from '@/components/utils/TanStackRouterDevtools';
 
 export const Route = createRootRoute({
   component: RootLayout,
@@ -25,6 +27,9 @@ function RootLayout() {
       <main>
         <Outlet />
       </main>
+      <Suspense>
+        <TanStackRouterDevtools />
+      </Suspense>
     </>
   );
 }
